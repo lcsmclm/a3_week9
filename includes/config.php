@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$config = array(
 		"mysql_server" => "localhost",
 		"mysql_user" => "root",
