@@ -10,9 +10,14 @@ $('.thumbInfo img').on('click', function(){
   }) //don't put a semicolon here so we can chain methods together
   .done(function(data){
     console.log(data);
+    if(data){
+      data = JSON.parse(data);
+      renderCarInfo(data);
+    } else{
+      alert('your ajax call did\'t work');
+    }
 
-    data = JSON.parse(data);
-    renderCarInfo(data);
+
   })
 
   .fail(function(ajaxCall, status, error) {
@@ -21,6 +26,8 @@ $('.thumbInfo img').on('click', function(){
   });
 
   function renderCarInfo(car){
+    $('.thumbInfo img').addClass('nonActive');
+    $('#' + car.model).removeClass('nonActive');
     $('.subhead span').text(" mini Cooper" + car.model);
     $('.modelName').text(car.modelName);
     $('.priceInfo').text(car.pricing);
