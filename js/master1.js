@@ -10,7 +10,7 @@ $('.thumbInfo img').on('click', function(){
   }) //don't put a semicolon here so we can chain methods together
   .done(function(data){
     console.log(data);
-    if(data && data !="null"){
+    if(data){
       data = JSON.parse(data);
       renderCarInfo(data);
     } else{

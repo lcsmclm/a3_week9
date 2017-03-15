@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'MiniFont';
-  src: 
+  src:
     url('miniwebfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-body { 
+body {
 	font-family:'MiniFont', arial, helvetica;
 	background-color:black;
 	color:white;
@@ -14,7 +14,7 @@ body {
 
 h1, h2, h3, h4, h5 { color:white; font-family:'MiniFont', arial, helvetica; }
 
-.topNav { 
+.topNav {
 	width: 100%;
 	position: fixed;
 	top: 0px;
@@ -36,17 +36,17 @@ h1, h2, h3, h4, h5 { color:white; font-family:'MiniFont', arial, helvetica; }
 nav {
 	width:1200px;
 	max-width: 1200px;
-	margin:0 auto; 
+	margin:0 auto;
 	padding-top:10px;
 	color:white;
 }
 
-nav ul { 
+nav ul {
 	margin-bottom:0 !important;
 	padding-top:8px !important;
 }
 
-nav ul li { 
+nav ul li {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
   	-moz-user-select: none;     /* Firefox all */
  	 -ms-user-select: none;
@@ -70,22 +70,22 @@ nav ul li:last-child::after { content:""; }
 
 nav > div { cursor: pointer; }
 
-nav > div > i { 
-	margin-right:8px; 
+nav > div > i {
+	margin-right:8px;
 	font-size: 1.5em !important;
 	position: relative;
 	top: 2px;
 }
 
-.mainContainer { 
+.mainContainer {
 	background: url("../images/landing-bg.jpg") no-repeat;
-	background-position: -350px 0; 
+	background-position: -350px 0;
 	min-height: 500px;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	position: relative;
 }
 
-#cars { width:80%; position: relative; margin: 0 auto; top:330px; opacity:0; }
+#cars { width:80%; position: relative; margin: 0 auto; top:330px;  opacity: 0;}
 
 .thumbInfo img { cursor: pointer; transition: all .6s; } /*, .mainContainer img*/
 .thumbInfo img { width: 175px; }
@@ -133,11 +133,10 @@ li > p { margin-bottom: 5px; font-family: arial, helvetica, sans-serif; }
 
 .fadeOut { opacity:0; }
 
-.focusMini { 
+.focusMini {
 	opacity:1;
 	z-index: 1000;
 	top:190px;
 	width:550px;
 	left: 250px;
 }
-
